@@ -1,13 +1,13 @@
 {
-  "name": "2024-01__tailwind-landing-page",
+  "name": "bookmark-tailwindcss-theme",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:tailwinds": "tailwind build src/style.css -o public/style.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "edanTal",
   "license": "ISC",
   "dependencies": {
     "tailwindcss": "^3.4.1"
