@@ -34,3 +34,14 @@
     hover:text-bookmark-blue
     hover:border-bookmark-blue;
 }
+
+.btn-cta {
+  @apply bg-bookmark-red
+    hover:bg-bookmark-blue;
+}
+
+.nav-link {
+  @apply text-bookmark-blue
+    hover:text-bookmark-purple
+    duration-500;
+}

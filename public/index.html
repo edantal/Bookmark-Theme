@@ -15,35 +15,48 @@
   </head>
   <body class="font-poppins">
     <!-- HEADER -->
-    <header>
-      <nav class="container flex items-center py-4 mt-4 sm:mt-12">
-        <!-- // logo  -->
-        <div class="py-1">
-          <img src="./images/logo-bookmark.svg" alt="Logo" />
+    <header class="z-20">
+      <nav
+        class="container sm:flex sm:items-center sm:justify-between py-4 mt-4 sm:mt-12"
+      >
+        <div class="py-1 flex justify-between items-center">
+          <!-- // logo  -->
+          <span class="cursor-pointer">
+            <img src="./images/logo-bookmark.svg" alt="Logo" />
+          </span>
+
+          <!-- // mobile navigation  -->
+          <span class="block sm:hidden cursor-pointer">
+            <i
+              class="text-xl fas fa-bars transition-all ease-out duration-500"
+              name="menu"
+              onclick="Menu(this)"
+            ></i>
+          </span>
         </div>
+
         <!-- // navigation  -->
         <ul
-          class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs"
+          class="nav-list sm:flex sm:flex-1 sm:justify-end sm:items-center gap-8 w-full sm:w-auto z-10 sm:static absolute left-0 top-[-400px] py-6 sm:py-0 pl-7 sm:pl-0 opacity-0 sm:opacity-100 bg-white sm:bg-transparent shadow-md sm:shadow-none uppercase text-xs transition-all ease-in duration-500"
         >
-          <li class="cursor-pointer">Features</li>
-          <li class="cursor-pointer">Pricing</li>
-          <li class="cursor-pointer">Contact</li>
-          <button
-            type="button"
-            class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase"
-          >
-            Login
+          <li class="cursor-pointer my-6 sm:my-0">
+            <a href="#" class="nav-link"> Features </a>
+          </li>
+          <li class="cursor-pointer my-6 sm:my-0">
+            <a href="#" class="nav-link"> Pricing </a>
+          </li>
+          <li class="cursor-pointer my-6 sm:my-0">
+            <a href="#" class="nav-link"> Contact </a>
+          </li>
+          <button type="button" class="btn btn-cta text-white">
+            Get Started
           </button>
         </ul>
-        <!-- // mobile navigation  -->
-        <div class="flex sm:hidden flex-1 justify-end">
-          <i class="text-2xl fas fa-bars"></i>
-        </div>
       </nav>
     </header>
 
     <!-- HERO -->
-    <section class="relative">
+    <section class="relative z-0">
       <div
         class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28"
       >
@@ -306,12 +319,7 @@
               placeholder="Enter your email address"
               class="focus:outline-none flex-1 px-2 py-3 rounded-md text-bookmark-purple"
             />
-            <button
-              type="button"
-              class="btn bg-bookmark-red hover:bg-bookmark-blue"
-            >
-              Contact us
-            </button>
+            <button type="button" class="btn btn-cta">Contact us</button>
           </div>
         </div>
       </div>
@@ -338,5 +346,24 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector('ul.nav-list')
+        e.name === 'menu'
+          ? ((e.name = 'close'),
+            e.classList.add('rotate-180'),
+            e.classList.remove('fa-bars'),
+            e.classList.add('fa-xmark'),
+            list.classList.add('top-[80px]'),
+            list.classList.add('opacity-100'))
+          : ((e.name = 'menu'),
+            e.classList.remove('rotate-180'),
+            e.classList.add('fa-bars'),
+            e.classList.remove('fa-xmark'),
+            list.classList.remove('top-[80px]'),
+            list.classList.remove('opacity-100'))
+      }
+    </script>
   </body>
 </html>
