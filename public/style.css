@@ -900,6 +900,10 @@ video {
     margin-top: 7rem;
   }
 
+  .lg\:mt-52 {
+    margin-top: 13rem;
+  }
+
   .lg\:mt-60 {
     margin-top: 15rem;
   }
@@ -918,6 +922,10 @@ video {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:flex-row-reverse {
+    flex-direction: row-reverse;
   }
 
   .lg\:items-start {
