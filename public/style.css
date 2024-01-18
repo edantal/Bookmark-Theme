@@ -700,6 +700,10 @@ video {
   justify-content: center;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-12 {
   gap: 3rem;
 }
@@ -741,6 +745,11 @@ video {
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.bg-bookmark-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 42 69 / var(--tw-bg-opacity));
 }
 
 .bg-bookmark-purple {
@@ -795,6 +804,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-6 {
@@ -964,6 +978,10 @@ video {
     margin-bottom: 4rem;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -978,6 +996,14 @@ video {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
   }
 }
 
