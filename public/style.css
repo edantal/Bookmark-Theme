@@ -558,6 +558,22 @@ video {
   }
 }
 
+.accordion__header {
+  cursor: pointer;
+  border-bottom-width: 1px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.accordion__body {
+  max-height: 0px;
+  overflow: hidden;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
 .absolute {
   position: absolute;
 }
@@ -592,10 +608,6 @@ video {
 
 .z-10 {
   z-index: 10;
-}
-
-.z-20 {
-  z-index: 20;
 }
 
 .mx-auto {

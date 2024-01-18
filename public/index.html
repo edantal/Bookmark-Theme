@@ -15,7 +15,7 @@
   </head>
   <body class="font-poppins">
     <!-- HEADER -->
-    <header class="z-20">
+    <header>
       <nav
         class="container sm:flex sm:items-center sm:justify-between py-4 mt-4 sm:mt-12"
       >
@@ -279,23 +279,79 @@
         </div>
 
         <!-- faq items -->
-        <div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
-          <div class="flex items-center border-b py-4">
-            <span class="flex-1">What is a Bookmark?</span>
-            <i class="fas fa-chevron-down text-bookmark-purple"></i>
+        <div class="accordion flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
+          <!-- item 1 -->
+          <div class="accordion__item">
+            <div class="accordion__header flex items-center justify-between">
+              <span class="flex-1">What is a Bookmark?</span>
+              <i class="fas fa-chevron-down text-bookmark-purple"></i>
+            </div>
+            <div class="accordion__body">
+              <div class="py-4">
+                <p class="text-bookmark-grey text-xs">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tempore itaque eum repellat esse nihil. Hic mollitia beatae
+                  blanditiis adipisci sed! Enim totam deserunt beatae a quidem,
+                  nesciunt cupiditate ea!
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="flex items-center border-b py-4">
-            <span class="flex-1">How can I request a new browser?</span>
-            <i class="fas fa-chevron-down text-bookmark-purple"></i>
+
+          <!-- item 2 -->
+          <div class="accordion__item">
+            <div class="accordion__header flex items-center justify-between">
+              <span class="flex-1">Is there a mobile app?</span>
+              <i class="fas fa-chevron-down text-bookmark-purple"></i>
+            </div>
+            <div class="accordion__body">
+              <div class="py-4">
+                <p class="text-bookmark-grey text-xs">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tempore itaque eum repellat esse nihil. Hic mollitia beatae
+                  blanditiis adipisci sed! Enim totam deserunt beatae a quidem,
+                  nesciunt cupiditate ea!
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="flex items-center border-b py-4">
-            <span class="flex-1">Is there a mobile app?</span>
-            <i class="fas fa-chevron-down text-bookmark-purple"></i>
+
+          <!-- item 3 -->
+          <div class="accordion__item">
+            <div class="accordion__header flex items-center justify-between">
+              <span class="flex-1">How can I request a new browser?</span>
+              <i class="fas fa-chevron-down text-bookmark-purple"></i>
+            </div>
+            <div class="accordion__body">
+              <div class="py-4">
+                <p class="text-bookmark-grey text-xs">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tempore itaque eum repellat esse nihil. Hic mollitia beatae
+                  blanditiis adipisci sed! Enim totam deserunt beatae a quidem,
+                  nesciunt cupiditate ea!
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="flex items-center border-b py-4">
-            <span class="flex-1">What about other Chromium browsers?</span>
-            <i class="fas fa-chevron-down text-bookmark-purple"></i>
+
+          <!-- item 4 -->
+          <div class="accordion__item">
+            <div class="accordion__header flex items-center justify-between">
+              <span class="flex-1">What about other Chromium browsers?</span>
+              <i class="fas fa-chevron-down text-bookmark-purple"></i>
+            </div>
+            <div class="accordion__body">
+              <div class="py-4">
+                <p class="text-bookmark-grey text-xs">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tempore itaque eum repellat esse nihil. Hic mollitia beatae
+                  blanditiis adipisci sed! Enim totam deserunt beatae a quidem,
+                  nesciunt cupiditate ea!
+                </p>
+              </div>
+            </div>
           </div>
+
           <button type="button" class="mt-12 flex self-center btn btn-primary">
             Read more
           </button>
@@ -365,5 +421,6 @@
             list.classList.remove('opacity-100'))
       }
     </script>
+    <script src="./main.js"></script>
   </body>
 </html>

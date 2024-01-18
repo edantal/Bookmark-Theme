@@ -45,3 +45,18 @@
     hover:text-bookmark-purple
     duration-500;
 }
+
+@layer components {
+  .accordion__header {
+    @apply border-b
+      py-4
+      cursor-pointer;
+  }
+  .accordion__body {
+    @apply max-h-0
+      overflow-hidden
+      transition-all
+      duration-200
+      ease-out;
+  }
+}
