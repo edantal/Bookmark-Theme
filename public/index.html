@@ -28,9 +28,9 @@
           <!-- // mobile navigation  -->
           <span class="block sm:hidden cursor-pointer">
             <i
-              class="text-xl fas fa-bars transition-all ease-out duration-500"
+              class="mobile-menu-btn text-xl fas fa-bars transition-all ease-out duration-500"
               name="menu"
-              onclick="Menu(this)"
+              onclick="toggleMobileMenu(this)"
             ></i>
           </span>
         </div>
@@ -40,13 +40,13 @@
           class="nav-list sm:flex sm:flex-1 sm:justify-end sm:items-center gap-8 w-full sm:w-auto z-10 sm:static absolute left-0 top-[-400px] py-6 sm:py-0 pl-7 sm:pl-0 opacity-0 sm:opacity-100 bg-white sm:bg-transparent shadow-md sm:shadow-none uppercase text-xs transition-all ease-in duration-500"
         >
           <li class="cursor-pointer my-6 sm:my-0">
-            <a href="#" class="nav-link"> Features </a>
+            <a href="#features" class="nav-link"> Features </a>
           </li>
           <li class="cursor-pointer my-6 sm:my-0">
-            <a href="#" class="nav-link"> Pricing </a>
+            <a href="#download" class="nav-link"> Pricing </a>
           </li>
           <li class="cursor-pointer my-6 sm:my-0">
-            <a href="#" class="nav-link"> Contact </a>
+            <a href="#contact" class="nav-link"> Contact </a>
           </li>
           <button type="button" class="btn btn-cta text-white">
             Get Started
@@ -97,7 +97,7 @@
     </section>
 
     <!-- FEATURES -->
-    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60">
+    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60" id="features">
       <!-- heading -->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
         <h1 class="text-3xl text-center text-bookmark-blue">Features</h1>
@@ -201,7 +201,7 @@
     </section>
 
     <!-- DOWNLOAD -->
-    <section class="py-20 mt-20">
+    <section class="py-20 mt-20" id="download">
       <!-- heading -->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
         <h1 class="text-3xl text-center text-bookmark-blue">
@@ -265,7 +265,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="bg-bookmark-white py-20">
+    <section class="bg-bookmark-white py-20" id="faq">
       <div class="container">
         <!-- heading -->
         <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
@@ -368,7 +368,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="bg-bookmark-purple text-white py-20">
+    <section class="bg-bookmark-purple text-white py-20" id="contact">
       <div class="container">
         <div class="sm:w-3/4 lg:w-2/4 mx-auto">
           <p class="font-light uppercase text-center mb-8">
