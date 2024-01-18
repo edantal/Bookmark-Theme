@@ -6,13 +6,31 @@
 
 /* Custom Btn */
 .btn {
-  @apply shadow-md py-3 px-6 rounded-md transition duration-300;
+  @apply shadow-md
+    py-3
+    px-6
+    rounded-md
+    transition
+    duration-300;
 }
 
-.btn-purple {
-  @apply bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-black;
+.btn-primary {
+  @apply bg-bookmark-purple
+    text-white
+    border
+    border-solid
+    border-bookmark-purple
+    hover:bg-bookmark-blue
+    hover:border-bookmark-blue;
 }
 
-.btn-white {
-  @apply bg-bookmark-white hover:bg-bookmark-purple hover:text-bookmark-white;
+.btn-secondary {
+  @apply bg-white
+    text-bookmark-purple
+    border
+    border-solid
+    border-bookmark-purple
+    hover:bg-bookmark-white
+    hover:text-bookmark-blue
+    hover:border-bookmark-blue;
 }
