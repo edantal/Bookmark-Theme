@@ -284,7 +284,9 @@
           <div class="accordion__item">
             <div class="accordion__header flex items-center justify-between">
               <span class="flex-1">What is a Bookmark?</span>
-              <i class="fas fa-chevron-down text-bookmark-purple"></i>
+              <i
+                class="fas fa-chevron-down text-bookmark-purple transition-all ease-out duration-300"
+              ></i>
             </div>
             <div class="accordion__body">
               <div class="py-4">
@@ -302,7 +304,9 @@
           <div class="accordion__item">
             <div class="accordion__header flex items-center justify-between">
               <span class="flex-1">Is there a mobile app?</span>
-              <i class="fas fa-chevron-down text-bookmark-purple"></i>
+              <i
+                class="fas fa-chevron-down text-bookmark-purple transition-all ease-out duration-300"
+              ></i>
             </div>
             <div class="accordion__body">
               <div class="py-4">
@@ -320,7 +324,9 @@
           <div class="accordion__item">
             <div class="accordion__header flex items-center justify-between">
               <span class="flex-1">How can I request a new browser?</span>
-              <i class="fas fa-chevron-down text-bookmark-purple"></i>
+              <i
+                class="fas fa-chevron-down text-bookmark-purple transition-all ease-out duration-300"
+              ></i>
             </div>
             <div class="accordion__body">
               <div class="py-4">
@@ -338,7 +344,9 @@
           <div class="accordion__item">
             <div class="accordion__header flex items-center justify-between">
               <span class="flex-1">What about other Chromium browsers?</span>
-              <i class="fas fa-chevron-down text-bookmark-purple"></i>
+              <i
+                class="fas fa-chevron-down text-bookmark-purple transition-all ease-out duration-300"
+              ></i>
             </div>
             <div class="accordion__body">
               <div class="py-4">
@@ -403,24 +411,6 @@
       </div>
     </footer>
 
-    <script>
-      function Menu(e) {
-        let list = document.querySelector('ul.nav-list')
-        e.name === 'menu'
-          ? ((e.name = 'close'),
-            e.classList.add('rotate-180'),
-            e.classList.remove('fa-bars'),
-            e.classList.add('fa-xmark'),
-            list.classList.add('top-[80px]'),
-            list.classList.add('opacity-100'))
-          : ((e.name = 'menu'),
-            e.classList.remove('rotate-180'),
-            e.classList.add('fa-bars'),
-            e.classList.remove('fa-xmark'),
-            list.classList.remove('top-[80px]'),
-            list.classList.remove('opacity-100'))
-      }
-    </script>
     <script src="./main.js"></script>
   </body>
 </html>
