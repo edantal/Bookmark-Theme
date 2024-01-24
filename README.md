@@ -2,6 +2,14 @@
 
 Static Tailwind CSS Framework Theme - Bookmark
 
+### Resources
+
+- [Tailwind CSS](https://tailwindcss.com)
+- [Material Tailwind](https://www.material-tailwind.com)
+- [Flowbite](https://flowbite.com)
+- [Font Awesome](https://cdnjs.com/libraries/font-awesome)
+- [Google Fonts: Poppins](https://fonts.google.com/specimen/Poppins)
+
 <!--
 
 ---
