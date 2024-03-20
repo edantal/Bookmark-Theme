@@ -10,6 +10,10 @@ Static Tailwind CSS Framework Theme - Bookmark
 - [Font Awesome](https://cdnjs.com/libraries/font-awesome)
 - [Google Fonts: Poppins](https://fonts.google.com/specimen/Poppins)
 
+### Preview
+
+[View Design](https://raw.githubusercontent.com/edantal/Theme-Bookmark--TailwindCSS/main/preview.jpg)
+
 <!--
 
 ---
