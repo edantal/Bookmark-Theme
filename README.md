@@ -1,6 +1,11 @@
 # Bookmark TaliwindCSS Theme
 
-Static Tailwind CSS Framework Theme - Bookmark
+<div>
+  <div>
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06b6d4" alt="tailwindcss" />
+  </div>
+  <h3>Static Tailwind CSS Framework Theme - Bookmark</h3>
+</div>
 
 ### Resources
 
